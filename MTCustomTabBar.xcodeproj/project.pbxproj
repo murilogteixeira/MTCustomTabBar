@@ -7,29 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6935BB3022FA11010081B814 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6935BB2F22FA11010081B814 /* AppDelegate.swift */; };
-		6935BB3722FA11010081B814 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6935BB3522FA11010081B814 /* Main.storyboard */; };
-		6935BB3922FA11030081B814 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6935BB3822FA11030081B814 /* Assets.xcassets */; };
-		6935BB3C22FA11030081B814 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6935BB3A22FA11030081B814 /* LaunchScreen.storyboard */; };
-		69BFCB5F22FA207C00B3EB5B /* MTCustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BFCB5A22FA207B00B3EB5B /* MTCustomTabBarController.swift */; };
-		69BFCB6122FA207C00B3EB5B /* SwipeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BFCB5C22FA207B00B3EB5B /* SwipeTransition.swift */; };
-		69BFCB6222FA207C00B3EB5B /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BFCB5D22FA207B00B3EB5B /* Indicator.swift */; };
+		69BFCB7722FA271E00B3EB5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BFCB7622FA271E00B3EB5B /* AppDelegate.swift */; };
+		69BFCB7E22FA271E00B3EB5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69BFCB7C22FA271E00B3EB5B /* Main.storyboard */; };
+		69BFCB8022FA271F00B3EB5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69BFCB7F22FA271F00B3EB5B /* Assets.xcassets */; };
+		69BFCB8322FA271F00B3EB5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69BFCB8122FA271F00B3EB5B /* LaunchScreen.storyboard */; };
+		69BFCB9422FA29E400B3EB5B /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BFCB9322FA29E400B3EB5B /* Indicator.swift */; };
+		69BFCB9622FA29F200B3EB5B /* MTCustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BFCB9522FA29F200B3EB5B /* MTCustomTabBarController.swift */; };
+		69BFCB9822FA29FB00B3EB5B /* SwipeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BFCB9722FA29FB00B3EB5B /* SwipeTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6935BB2C22FA11010081B814 /* MTCustomTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTCustomTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6935BB2F22FA11010081B814 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6935BB3622FA11010081B814 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6935BB3822FA11030081B814 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6935BB3B22FA11030081B814 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6935BB3D22FA11030081B814 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		69BFCB5A22FA207B00B3EB5B /* MTCustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MTCustomTabBarController.swift; path = "../../../Projetos Academy/Nano Challenge 2/AppFinanceiro/AppFinanceiro/ViewController 1.1/MTCustomTabBarController.swift"; sourceTree = "<group>"; };
-		69BFCB5C22FA207B00B3EB5B /* SwipeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwipeTransition.swift; path = "../../../Projetos Academy/Nano Challenge 2/AppFinanceiro/AppFinanceiro/ViewController 1.1/SwipeTransition.swift"; sourceTree = "<group>"; };
-		69BFCB5D22FA207B00B3EB5B /* Indicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Indicator.swift; path = "../../../Projetos Academy/Nano Challenge 2/AppFinanceiro/AppFinanceiro/ViewController 1.1/Indicator.swift"; sourceTree = "<group>"; };
+		69BFCB7322FA271E00B3EB5B /* MTCustomTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTCustomTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69BFCB7622FA271E00B3EB5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		69BFCB7D22FA271E00B3EB5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		69BFCB7F22FA271F00B3EB5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69BFCB8222FA271F00B3EB5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		69BFCB8422FA271F00B3EB5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69BFCB9322FA29E400B3EB5B /* Indicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Indicator.swift; sourceTree = "<group>"; };
+		69BFCB9522FA29F200B3EB5B /* MTCustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTCustomTabBarController.swift; sourceTree = "<group>"; };
+		69BFCB9722FA29FB00B3EB5B /* SwipeTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6935BB2922FA11010081B814 /* Frameworks */ = {
+		69BFCB7022FA271E00B3EB5B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,33 +39,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6935BB2322FA11010081B814 = {
+		69BFCB6A22FA271E00B3EB5B = {
 			isa = PBXGroup;
 			children = (
-				6935BB2E22FA11010081B814 /* MTCustomTabBar */,
-				6935BB2D22FA11010081B814 /* Products */,
+				69BFCB7522FA271E00B3EB5B /* MTCustomTabBar */,
+				69BFCB7422FA271E00B3EB5B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		6935BB2D22FA11010081B814 /* Products */ = {
+		69BFCB7422FA271E00B3EB5B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6935BB2C22FA11010081B814 /* MTCustomTabBar.app */,
+				69BFCB7322FA271E00B3EB5B /* MTCustomTabBar.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6935BB2E22FA11010081B814 /* MTCustomTabBar */ = {
+		69BFCB7522FA271E00B3EB5B /* MTCustomTabBar */ = {
 			isa = PBXGroup;
 			children = (
-				6935BB2F22FA11010081B814 /* AppDelegate.swift */,
-				69BFCB5D22FA207B00B3EB5B /* Indicator.swift */,
-				69BFCB5A22FA207B00B3EB5B /* MTCustomTabBarController.swift */,
-				69BFCB5C22FA207B00B3EB5B /* SwipeTransition.swift */,
-				6935BB3522FA11010081B814 /* Main.storyboard */,
-				6935BB3822FA11030081B814 /* Assets.xcassets */,
-				6935BB3A22FA11030081B814 /* LaunchScreen.storyboard */,
-				6935BB3D22FA11030081B814 /* Info.plist */,
+				69BFCB9722FA29FB00B3EB5B /* SwipeTransition.swift */,
+				69BFCB9522FA29F200B3EB5B /* MTCustomTabBarController.swift */,
+				69BFCB9322FA29E400B3EB5B /* Indicator.swift */,
+				69BFCB7622FA271E00B3EB5B /* AppDelegate.swift */,
+				69BFCB7C22FA271E00B3EB5B /* Main.storyboard */,
+				69BFCB7F22FA271F00B3EB5B /* Assets.xcassets */,
+				69BFCB8122FA271F00B3EB5B /* LaunchScreen.storyboard */,
+				69BFCB8422FA271F00B3EB5B /* Info.plist */,
 			);
 			path = MTCustomTabBar;
 			sourceTree = "<group>";
@@ -73,13 +73,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6935BB2B22FA11010081B814 /* MTCustomTabBar */ = {
+		69BFCB7222FA271E00B3EB5B /* MTCustomTabBar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6935BB4022FA11030081B814 /* Build configuration list for PBXNativeTarget "MTCustomTabBar" */;
+			buildConfigurationList = 69BFCB8722FA271F00B3EB5B /* Build configuration list for PBXNativeTarget "MTCustomTabBar" */;
 			buildPhases = (
-				6935BB2822FA11010081B814 /* Sources */,
-				6935BB2922FA11010081B814 /* Frameworks */,
-				6935BB2A22FA11010081B814 /* Resources */,
+				69BFCB6F22FA271E00B3EB5B /* Sources */,
+				69BFCB7022FA271E00B3EB5B /* Frameworks */,
+				69BFCB7122FA271E00B3EB5B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -87,25 +87,25 @@
 			);
 			name = MTCustomTabBar;
 			productName = MTCustomTabBar;
-			productReference = 6935BB2C22FA11010081B814 /* MTCustomTabBar.app */;
+			productReference = 69BFCB7322FA271E00B3EB5B /* MTCustomTabBar.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6935BB2422FA11010081B814 /* Project object */ = {
+		69BFCB6B22FA271E00B3EB5B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Murilo Teixeira";
 				TargetAttributes = {
-					6935BB2B22FA11010081B814 = {
+					69BFCB7222FA271E00B3EB5B = {
 						CreatedOnToolsVersion = 10.3;
 					};
 				};
 			};
-			buildConfigurationList = 6935BB2722FA11010081B814 /* Build configuration list for PBXProject "MTCustomTabBar" */;
+			buildConfigurationList = 69BFCB6E22FA271E00B3EB5B /* Build configuration list for PBXProject "MTCustomTabBar" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,56 +113,56 @@
 				en,
 				Base,
 			);
-			mainGroup = 6935BB2322FA11010081B814;
-			productRefGroup = 6935BB2D22FA11010081B814 /* Products */;
+			mainGroup = 69BFCB6A22FA271E00B3EB5B;
+			productRefGroup = 69BFCB7422FA271E00B3EB5B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6935BB2B22FA11010081B814 /* MTCustomTabBar */,
+				69BFCB7222FA271E00B3EB5B /* MTCustomTabBar */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6935BB2A22FA11010081B814 /* Resources */ = {
+		69BFCB7122FA271E00B3EB5B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6935BB3C22FA11030081B814 /* LaunchScreen.storyboard in Resources */,
-				6935BB3922FA11030081B814 /* Assets.xcassets in Resources */,
-				6935BB3722FA11010081B814 /* Main.storyboard in Resources */,
+				69BFCB8322FA271F00B3EB5B /* LaunchScreen.storyboard in Resources */,
+				69BFCB8022FA271F00B3EB5B /* Assets.xcassets in Resources */,
+				69BFCB7E22FA271E00B3EB5B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6935BB2822FA11010081B814 /* Sources */ = {
+		69BFCB6F22FA271E00B3EB5B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69BFCB6122FA207C00B3EB5B /* SwipeTransition.swift in Sources */,
-				6935BB3022FA11010081B814 /* AppDelegate.swift in Sources */,
-				69BFCB5F22FA207C00B3EB5B /* MTCustomTabBarController.swift in Sources */,
-				69BFCB6222FA207C00B3EB5B /* Indicator.swift in Sources */,
+				69BFCB9822FA29FB00B3EB5B /* SwipeTransition.swift in Sources */,
+				69BFCB9622FA29F200B3EB5B /* MTCustomTabBarController.swift in Sources */,
+				69BFCB9422FA29E400B3EB5B /* Indicator.swift in Sources */,
+				69BFCB7722FA271E00B3EB5B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6935BB3522FA11010081B814 /* Main.storyboard */ = {
+		69BFCB7C22FA271E00B3EB5B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6935BB3622FA11010081B814 /* Base */,
+				69BFCB7D22FA271E00B3EB5B /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		6935BB3A22FA11030081B814 /* LaunchScreen.storyboard */ = {
+		69BFCB8122FA271F00B3EB5B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6935BB3B22FA11030081B814 /* Base */,
+				69BFCB8222FA271F00B3EB5B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -170,7 +170,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		6935BB3E22FA11030081B814 /* Debug */ = {
+		69BFCB8522FA271F00B3EB5B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -231,7 +231,7 @@
 			};
 			name = Debug;
 		};
-		6935BB3F22FA11030081B814 /* Release */ = {
+		69BFCB8622FA271F00B3EB5B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -286,7 +286,7 @@
 			};
 			name = Release;
 		};
-		6935BB4122FA11030081B814 /* Debug */ = {
+		69BFCB8822FA271F00B3EB5B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -304,7 +304,7 @@
 			};
 			name = Debug;
 		};
-		6935BB4222FA11030081B814 /* Release */ = {
+		69BFCB8922FA271F00B3EB5B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -325,25 +325,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6935BB2722FA11010081B814 /* Build configuration list for PBXProject "MTCustomTabBar" */ = {
+		69BFCB6E22FA271E00B3EB5B /* Build configuration list for PBXProject "MTCustomTabBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6935BB3E22FA11030081B814 /* Debug */,
-				6935BB3F22FA11030081B814 /* Release */,
+				69BFCB8522FA271F00B3EB5B /* Debug */,
+				69BFCB8622FA271F00B3EB5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6935BB4022FA11030081B814 /* Build configuration list for PBXNativeTarget "MTCustomTabBar" */ = {
+		69BFCB8722FA271F00B3EB5B /* Build configuration list for PBXNativeTarget "MTCustomTabBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6935BB4122FA11030081B814 /* Debug */,
-				6935BB4222FA11030081B814 /* Release */,
+				69BFCB8822FA271F00B3EB5B /* Debug */,
+				69BFCB8922FA271F00B3EB5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6935BB2422FA11010081B814 /* Project object */;
+	rootObject = 69BFCB6B22FA271E00B3EB5B /* Project object */;
 }
