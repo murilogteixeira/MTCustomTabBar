@@ -58,9 +58,7 @@
 		69BFCB7522FA271E00B3EB5B /* MTCustomTabBar */ = {
 			isa = PBXGroup;
 			children = (
-				69BFCB9722FA29FB00B3EB5B /* SwipeTransition.swift */,
-				69BFCB9522FA29F200B3EB5B /* MTCustomTabBarController.swift */,
-				69BFCB9322FA29E400B3EB5B /* Indicator.swift */,
+				69BFCB9A22FA2A7800B3EB5B /* CustomFiles */,
 				69BFCB7622FA271E00B3EB5B /* AppDelegate.swift */,
 				69BFCB7C22FA271E00B3EB5B /* Main.storyboard */,
 				69BFCB7F22FA271F00B3EB5B /* Assets.xcassets */,
@@ -68,6 +66,16 @@
 				69BFCB8422FA271F00B3EB5B /* Info.plist */,
 			);
 			path = MTCustomTabBar;
+			sourceTree = "<group>";
+		};
+		69BFCB9A22FA2A7800B3EB5B /* CustomFiles */ = {
+			isa = PBXGroup;
+			children = (
+				69BFCB9722FA29FB00B3EB5B /* SwipeTransition.swift */,
+				69BFCB9522FA29F200B3EB5B /* MTCustomTabBarController.swift */,
+				69BFCB9322FA29E400B3EB5B /* Indicator.swift */,
+			);
+			name = CustomFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
