@@ -11,7 +11,7 @@ import UIKit
 @IBDesignable
 class MTCustomTabBarController: UITabBarController {
     
-    var indicator = Indicator()
+    private var indicator = Indicator()
     
     @IBInspectable
     public var showIndicator: Bool = false {
@@ -44,10 +44,10 @@ class MTCustomTabBarController: UITabBarController {
         }
     }
     
-    var transition: SwipeTransition?
+    private var transition: SwipeTransition? = nil
     
     @IBInspectable
-    var swipeTransition: Bool = false {
+    public var swipeTransition: Bool = false {
         didSet{
             if self.swipeTransition {
                 self.transition = SwipeTransition(viewControllers: self.viewControllers)
@@ -55,9 +55,10 @@ class MTCustomTabBarController: UITabBarController {
         }
     }
     
-    var fromIndex = 0
+    private var fromIndex = 0
     
-    @objc func orientationDidRotate() {
+    @objc
+    private func orientationDidRotate() {
         //        if UIDevice.current.orientation.isLandscape {
         //            print("landscape")
         //        } else if UIDevice.current.orientation.isPortrait {
@@ -74,7 +75,9 @@ class MTCustomTabBarController: UITabBarController {
         UIView.appearance().isExclusiveTouch = true
         
         // set gestos para troca de view
-        setSwipeGestures()
+        if swipeTransition {
+            setSwipeGestures()
+        }
         
         // set constraints do indicador
         if showIndicator {
@@ -93,7 +96,7 @@ class MTCustomTabBarController: UITabBarController {
         indicator.animar(fromIndex: fromIndex, toIndex: selectedIndex, withDuration: 0.2)
     }
     
-    func setSwipeGestures(){
+    private func setSwipeGestures(){
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipeGesture(_:)))
         swipeRight.direction = .right
         self.view.addGestureRecognizer(swipeRight)
@@ -103,7 +106,8 @@ class MTCustomTabBarController: UITabBarController {
         self.view.addGestureRecognizer(swipeLeft)
     }
     
-    @objc func handleSwipeGesture(_ gesture: UISwipeGestureRecognizer) {
+    @objc
+    private func handleSwipeGesture(_ gesture: UISwipeGestureRecognizer) {
         let tabBarController = self
         let fromIndex = selectedIndex
         guard let viewControllers = self.viewControllers else { return }

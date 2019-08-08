@@ -100,6 +100,9 @@
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="cornerRadiusIndicator" value="YES"/>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="swipeTransition" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="indicatorWidthPercentage">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>

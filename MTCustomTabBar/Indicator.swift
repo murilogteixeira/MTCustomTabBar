@@ -68,17 +68,22 @@ class Indicator: UIView {
     func didCchangeOrientation(toOrientation: UIDeviceOrientation, selectedIndex: Int){
         guard let items = tabBar.items, items.count > 0 else { return }
         widthItem = tabBar.frame.width / CGFloat(items.count)
+        
+        // valor da margem até o inicio do item
         let margingSpace: CGFloat = {
             var value: CGFloat!
             // largura do item
             value = (tabBar.frame.width - widthItem) / 2
             // proporção do indicador no item
-            value += (value * (1 - proportionalWidth)) / 2
+            value += (value * (1 - proportionalWidth))
             // valor das constraints laterais
             return value
         }()
-        var leftConstant: CGFloat = margingSpace - widthItem - 1
-        var rightConstant: CGFloat = -(margingSpace + widthItem + 1)
+        // valor da constante da margem esquerda até o inicio do indicador (esq do indicador)
+        var leftConstant: CGFloat = margingSpace - (widthItem/2) - 1
+        // valor da constante da margem direita até o fim do indicador (dir do indicador)
+        var rightConstant: CGFloat = -(margingSpace + (widthItem/2) - 1)
+        
         leftConstant += widthItem * CGFloat(selectedIndex)
         rightConstant += widthItem * CGFloat(selectedIndex)
         leftConstraint?.constant = leftConstant
@@ -94,18 +99,21 @@ class Indicator: UIView {
         
         widthItem = tabBar.frame.width / CGFloat(items.count)
         let topConstant: CGFloat = 1
+        // valor da margem até o inicio do item
         let margingSpace: CGFloat = {
             var value: CGFloat!
             // largura do item
             value = (tabBar.frame.width - widthItem) / 2
             // proporção do indicador no item
-            value += (value * (1 - proportionalWidth)) / 2
+            value += (value * (1 - proportionalWidth))
             // valor das constraints laterais
             return value
         }()
-        let leftConstant: CGFloat = margingSpace - widthItem - 1
-        let rightConstant: CGFloat = margingSpace + widthItem + 1
-        
+        // valor da constante da margem esquerda até o inicio do indicador (esq do indicador)
+        let leftConstant: CGFloat = margingSpace - (widthItem/2) - 1
+        // valor da constante da margem direita até o fim do indicador (dir do indicador)
+        let rightConstant: CGFloat = margingSpace + (widthItem/2) - 1
+                
         leftConstraint = self.leftAnchor.constraint(equalTo: tabBar.leftAnchor, constant: leftConstant)
         leftConstraint?.isActive = true
         rightConstraint = self.rightAnchor.constraint(equalTo: tabBar.rightAnchor, constant: -(rightConstant))
