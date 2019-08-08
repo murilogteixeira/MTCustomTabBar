@@ -95,13 +95,13 @@ class Indicator: UIView {
         var leftConstant: CGFloat = 0
         leftConstant += widthItem * proportionalWidth
         // valor da constante da margem direita até o fim do indicador (dir do indicador)
-        var rightConstant: CGFloat = widthItem * CGFloat(items.count - 1)
+        var rightConstant: CGFloat = -(widthItem * CGFloat(items.count - 1))
         rightConstant += widthItem * proportionalWidth
-
+        
         // configurar constraints
         leftConstraint = self.leftAnchor.constraint(equalTo: tabBar.leftAnchor, constant: leftConstant)
         leftConstraint?.isActive = true
-        rightConstraint = self.rightAnchor.constraint(equalTo: tabBar.rightAnchor, constant: -(rightConstant))
+        rightConstraint = self.rightAnchor.constraint(equalTo: tabBar.rightAnchor, constant: rightConstant)
         rightConstraint?.isActive = true
         topConstraint = self.topAnchor.constraint(equalTo: tabBar.topAnchor, constant: topConstant)
         topConstraint?.isActive = true

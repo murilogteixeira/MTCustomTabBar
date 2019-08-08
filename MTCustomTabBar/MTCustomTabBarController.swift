@@ -60,11 +60,6 @@ class MTCustomTabBarController: UITabBarController {
     
     @objc
     private func orientationDidRotate() {
-        //        if UIDevice.current.orientation.isLandscape {
-        //            print("landscape")
-        //        } else if UIDevice.current.orientation.isPortrait {
-        //            print("portrait")
-        //        }
         indicator.didCchangeOrientation(toOrientation: UIDevice.current.orientation, selectedIndex: selectedIndex)
     }
     
