@@ -100,18 +100,56 @@
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="cornerRadiusIndicator" value="YES"/>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="swipeTransition" value="YES"/>
-                        <userDefinedRuntimeAttribute type="number" keyPath="indicatorWidthPercentage">
-                            <real key="value" value="10"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="indicatorMarginWidthPercentage">
+                            <real key="value" value="0.0"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="R2K-yo-3Mi" kind="relationship" relationship="viewControllers" id="iY0-k1-fRB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--Second-->
+        <scene sceneID="DAv-cb-Lrl">
+            <objects>
+                <viewController id="R2K-yo-3Mi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VKY-Qh-gg1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="mPz-dE-q0S">
+                                <rect key="frame" x="106.5" y="426.5" width="201.5" height="43"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BwE-Lt-TFo">
+                                <rect key="frame" x="99.5" y="477.5" width="215" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="mPz-dE-q0S" secondAttribute="centerY" id="VYi-Mm-4x3"/>
+                            <constraint firstAttribute="centerX" secondItem="mPz-dE-q0S" secondAttribute="centerX" id="WKO-5D-93S"/>
+                            <constraint firstItem="BwE-Lt-TFo" firstAttribute="top" secondItem="mPz-dE-q0S" secondAttribute="bottom" constant="8" symbolic="YES" id="gHl-6m-vdO"/>
+                            <constraint firstItem="BwE-Lt-TFo" firstAttribute="centerX" secondItem="mPz-dE-q0S" secondAttribute="centerX" id="t5L-1p-CgQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gzz-KK-PZb"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Second" image="second" id="bsS-1v-uNu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Jc-UT-w3W" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749" y="1069"/>
         </scene>
     </scenes>
     <resources>

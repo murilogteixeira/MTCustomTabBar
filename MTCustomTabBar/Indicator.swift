@@ -19,7 +19,7 @@ class Indicator: UIView {
     var bottomConstraint: NSLayoutConstraint?
     var heightConstraint: NSLayoutConstraint?
     
-    var proportionalWidth: CGFloat = 1.0
+    var proportionalWidth: CGFloat = 0
     var height: CGFloat = 2.0
     var widthItem: CGFloat = 0
     
@@ -69,26 +69,17 @@ class Indicator: UIView {
         guard let items = tabBar.items, items.count > 0 else { return }
         widthItem = tabBar.frame.width / CGFloat(items.count)
         
-        // valor da margem até o inicio do item
-        let margingSpace: CGFloat = {
-            var value: CGFloat!
-            // largura do item
-            value = (tabBar.frame.width - widthItem) / 2
-            // proporção do indicador no item
-            value += (value * (1 - proportionalWidth))
-            // valor das constraints laterais
-            return value
-        }()
         // valor da constante da margem esquerda até o inicio do indicador (esq do indicador)
-        var leftConstant: CGFloat = margingSpace - (widthItem/2) - 1
+        var leftConstant: CGFloat = 0
+        leftConstant += widthItem * proportionalWidth
         // valor da constante da margem direita até o fim do indicador (dir do indicador)
-        var rightConstant: CGFloat = -(margingSpace + (widthItem/2) - 1)
+        var rightConstant: CGFloat = -(widthItem * CGFloat(items.count - 1))
+        rightConstant += widthItem * proportionalWidth
         
         leftConstant += widthItem * CGFloat(selectedIndex)
         rightConstant += widthItem * CGFloat(selectedIndex)
         leftConstraint?.constant = leftConstant
         rightConstraint?.constant = rightConstant
-        print(leftConstant, rightConstant)
         self.tabBar.layoutIfNeeded()
     }
     
@@ -99,21 +90,15 @@ class Indicator: UIView {
         
         widthItem = tabBar.frame.width / CGFloat(items.count)
         let topConstant: CGFloat = 1
-        // valor da margem até o inicio do item
-        let margingSpace: CGFloat = {
-            var value: CGFloat!
-            // largura do item
-            value = (tabBar.frame.width - widthItem) / 2
-            // proporção do indicador no item
-            value += (value * (1 - proportionalWidth))
-            // valor das constraints laterais
-            return value
-        }()
+        
         // valor da constante da margem esquerda até o inicio do indicador (esq do indicador)
-        let leftConstant: CGFloat = margingSpace - (widthItem/2) - 1
+        var leftConstant: CGFloat = 0
+        leftConstant += widthItem * proportionalWidth
         // valor da constante da margem direita até o fim do indicador (dir do indicador)
-        let rightConstant: CGFloat = margingSpace + (widthItem/2) - 1
-                
+        var rightConstant: CGFloat = widthItem * CGFloat(items.count - 1)
+        rightConstant += widthItem * proportionalWidth
+
+        // configurar constraints
         leftConstraint = self.leftAnchor.constraint(equalTo: tabBar.leftAnchor, constant: leftConstant)
         leftConstraint?.isActive = true
         rightConstraint = self.rightAnchor.constraint(equalTo: tabBar.rightAnchor, constant: -(rightConstant))

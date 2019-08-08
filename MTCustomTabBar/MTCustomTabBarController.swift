@@ -24,9 +24,10 @@ class MTCustomTabBarController: UITabBarController {
     }
     
     @IBInspectable
-    public var indicatorWidthPercentage: CGFloat = 100.0 {
+    public var indicatorMarginWidthPercentage: CGFloat = 0 {
         didSet{
-            self.indicator.proportionalWidth = self.indicatorWidthPercentage / 100.0
+            // valor da margem de cada lado a ser subtraído
+            self.indicator.proportionalWidth = (self.indicatorMarginWidthPercentage / 100.0) / 2
         }
     }
     
